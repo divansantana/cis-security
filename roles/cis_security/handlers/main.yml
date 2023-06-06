@@ -9,6 +9,7 @@
   ansible.builtin.service:
     name: auditd
     state: restarted
+  ignore_errors: True
   when: ansible_os_family != "windows"
   listen: "Restart auditd"
 
