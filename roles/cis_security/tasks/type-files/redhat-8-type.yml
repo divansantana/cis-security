@@ -3004,6 +3004,7 @@
   changed_when: false
   tags:
     - 6.1.2
+  failed_when: false
 
 - name: 6.1.[3,5,7,9] - Ensure permissions on /etc/passwd /etc/group
   ansible.builtin.file:
